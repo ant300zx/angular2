@@ -31,7 +31,7 @@ export class TubeComponent implements OnInit{
       .subscribe(
         videos => this.videos = videos,
         error => this.errorMessage = <any>error
-      )
+      );
   }
 
   goBack() {

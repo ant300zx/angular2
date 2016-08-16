@@ -9,7 +9,7 @@ export class YtubeService {
 
   constructor (private http: Http) {}
 
-  private ytubeURL = 'https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=3&q=tutsplus&type=video&key=AIzaSyBibEh8R8x5sBa2pEZMAKMPbw32-s-KM3g'
+  private ytubeURL = 'https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=3&q=tutsplus&type=video&key=YOUTUBEAPIKEYHERE'
 
   getVideos() {
     return this.http.get(this.ytubeURL)
