@@ -1,0 +1,15 @@
+<div class="container vidSection">
+  <div *ngIf="!vidLink">
+    <div *ngFor="#vid of videos" class="four columns">
+      <img src={{vid.snippet.thumbnails.medium.url}} (click)="vidSelect(vid.id.videoId)">
+    </div>
+  </div>
+
+  <div *ngIf="vidLink" class="tweleve columns">
+    <div (click)="goBack()">
+      <h3>Go Back</h3>
+      <iframe class="u-full-width" height="400px" [src]="vidLink" frameborder="0"></iframe>
+    </div>
+  </div>
+
+</div>
